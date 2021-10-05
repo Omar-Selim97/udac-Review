@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <!--Main Css Template File-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Render All Elment normally-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Js file-->
+    <!--Prevent XXS Attacks-->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.3/purify.min.js" integrity="sha512-gtcrasYnyeB27+IejClswFlb/eggt+khRr+lLAeNcgg5x2ijlWaiBOPXZkwivNj15LaE6s9CzV57hsoTPrQ5xg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--Main Js File-->
+    <script defer src="js/app.js"></script>
+</head>
+
+<body>
+    <!--Navigation bar-->
+
+    <section id="home">
+        <header>
+            <a class="logo" href="#">Portofolio</a>
+            <div id="contain">
+
+            </div>
+            <div class="links">
+                <span class="icons">
+                  <span></span>
+                <span></span>
+                <span></span>
+                </span>
+                <ul>
+                    <li><a data-section="#home" href="#home">Home</a></li>
+                    <li class="link"><a data-section="#about" href="#about">About Us</a></li>
+                    <li class="link"><a data-section="#services" href="#services">Services</a></li>
+                    <li class="link"><a data-section="#gallery" href="#gallery">Gallery</a></li>
+                    <li class="link"><a data-section="#contact" href="#contact">Contact Us</a></li>
+
+                </ul>
+            </div>
+        </header>
+        <!--Landing Page-->
+        <main>
+            <div class="container">
+                <div class="info">
+                    <h1>I'm Front End Developer</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Cum eum atque aliquam nisi voluptatem quasi tempore <br>odit illo minima undeali quam nisi voluptatem.</p>
+                    <button class="button">Click Me</button>
+                </div>
+                <div class="pc">
+                    <img width="400" height="400" src="img/o.jpg" alt="" srcset="">
+                </div>
+            </div>
+        </main>
+    </section>
+    <!--End Landing Page-->
+    <!--Start About Section-->
+    <section id="about">
+        <div class="container">
+            <h1>
+                <span> Watch</span> My <span>video</span>
+            </h1>
+
+            <div class="content">
+                <img src="img/w.jpg" alt="">
+                <h2>Click to see it =></h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui dolore odio consectetur, ipsam ad perspiciatis, eaque vero consequuntur saepe exercitationem vitae deserunt totam iusto sit numquam reiciendis voluptatibus quam, ullam dolores
+                    voluptate dicta! Consectetur voluptate perspiciatis quia eum libero natus.</p>
+                <a onclick="toggle();" href="#">Watch Me</a>
+            </div>
+            <div class="vid">
+                <video src="img/v.mp4" controls="true"></video>
+                <img onclick="toggle();" src="img/close.png" alt="" class="close">
+            </div>
+        </div>
+    </section>
+    <!--End About Section-->
+    <!--Our skills-->
+    <section class="reveal" id="skills">
+        <div class="container">
+            <h2>Our Skills</h2>
+            <div class="content">
+                <div class="serv">
+                    <span></span>
+                    <div class="card">
+                        <h3>Javascript</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel iste consequuntur odio deleniti facilis dicta quo cum quaerat.</p>
+                        <a href="#">Read More </a>
+                    </div>
+                </div>
+                <div class="serv">
+                    <span></span>
+                    <div class="card">
+                        <h3>Css3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel iste consequuntur odio deleniti facilis dicta quo cum quaerat.</p>
+                        <a href="#">Read More </a>
+                    </div>
+                </div>
+                <div class="serv">
+                    <span></span>
+                    <div class="card">
+                        <h3>Html5</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel iste consequuntur odio deleniti facilis dicta quo cum quaerat.</p>
+                        <a href="#">Read More </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Our Skills-->
+    <!--Gallery-->
+    <section class="reveal " id="gallery">
+        <div class="container">
+            <h4 class="special-heading">Gallery</h4>
+            <p>Sorry Now I Have no Technicall Works So This Is My Personal Images</p>
+            <div class="content">
+                <img src="img/mod/azher.jpg" alt="Take it in Azher's Park" srcset="">
+                <img src="img/mod/do.jpg" alt="probably it's taken at 2016" srcset="">
+                <img src="img/mod/fac.jpg" alt="it's in my faculty" srcset="">
+                <img src="img/mod/oly.jpg" alt="Cairo Olymbic's Club" srcset="">
+                <img src="img/mod/sharm.jpg" alt="at red sea in sharm-elshiekh" srcset="">
+                <img src="img/mod/tour.jpg" alt="tour on boat" srcset="">
+            </div>
+
+        </div>
+    </section>
+    <!--End Gallery-->
+    <!-- Start Contact-->
+    <section class="reveal" id="contact">
+        <div class="blur"></div>
+        <div class="container">
+            <h1>Contact US
+                <span class="txt-rotate" data-period="2000" data-rotate='[ "<span>&#9993; </span>", "ex@gmail.com", "<span>&#128222;</span>", "01032721050", "Twitter=>@Maro" ]'></span>
+            </h1>
+            <form action="" method="post">
+                <div class="left">
+                    <input type="text" placeholder="Your Name" name="username">
+                    <input type="text" placeholder="Your Phone" name="Phone">
+                    <input type="email" placeholder="Your Email" name="email">
+                    <input type="text" placeholder="Your Subject" name="subject">
+                </div>
+                <div class="right">
+                    <textarea name="Message" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- End Contact-->
+    <!--Footer-->
+    <footer>
+        <div class="container">
+            <ul class="icons">
+                <a href="https://www.facebook.com/marooo.selim/" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/home" class="fa fa-twitter"></a>
+                <a href="https://www.linkedin.com/in/omar-selim-8972b4214/" class="fa fa-linkedin"></a>
+            </ul>
+            <h5>All Rights Reserved By Omar Selim <span>&hearts;</span> &copy;2021 </h5>
+            <p>Thanks For Udacity &#128153;</p>
+        </div>
+    </footer>
+    <!-- End Footer-->
+
+</body>
+
+</html>
